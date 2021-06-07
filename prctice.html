@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pracice</title>
+    <link rel="stylesheet" href="prctice.css">
+</head>
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="col1"> <img src="imagesnew\images\logo.png" alt="" width="100px"> </div>
+        <div class="col2">
+             <div class="col21">
+                 <ul id="menuitems">
+                     <li>home</li>
+                     <li>home</li>
+                     <li>home</li>
+                     <li>home</li>
+                     <li>home</li>
+                 </ul>
+             </div>
+             <img src="imagesnew\images\menu.png" alt="" class="col22" width="50px" onclick="menutoggle">
+        </div>
+    </div>
+
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle(){
+            if( menuitems.style.maxHeight = "0px")
+            {
+                menuitems.style.maxHeight = "220px";
+            }
+            else{
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+     </script>
+</body>
+</html>
